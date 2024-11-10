@@ -1,0 +1,30 @@
+/* Estilos para la barra lateral */
+#sidebar {
+    height: 100vh;
+    padding-top: 1rem;
+    border-right: 1px solid #dee2e6;
+}
+
+#sidebar .nav-link {
+    color: #f4baeb;
+}
+
+#sidebar .nav-link.active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Ajustes de contenido */
+main {
+    padding-top: 20px;
+}
+
+/* Ajustes de estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Personalización del campo de contraseña */
+input[type="password"] {
+    font-family: 'Courier New', Courier, monospace; /* Cambia la fuente si lo deseas */
+}
