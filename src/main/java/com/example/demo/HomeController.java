@@ -2,6 +2,7 @@ package com.example.demo;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 
 @Controller
@@ -35,9 +36,17 @@ public class HomeController {
         return "reportes";
     }
     
-    @GetMapping("/home")
-    public String mostrarElHome() {
-        return "home";
+   // Redirigir a la página de inicio después de hacer login
+    @PostMapping("/home")
+    public String login() {
+        return "home"; // Nombre de tu archivo home.html
     } 
+     
+    @GetMapping("/productos")
+    public String mostrarLosProductos() {
+        return "productos";
+    }
+
+
 }
 

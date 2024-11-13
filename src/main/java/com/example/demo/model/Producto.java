@@ -10,40 +10,55 @@ import jakarta.persistence.Id;
 public class Producto {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)  // Esto es para autoincrementar la ID
-    private Long id;
-    private Long cantidad;
-    private Long cantidadMin;
-    private Long cantidadMax;
-    private Long nombre;
-    private Long idTipoProduct;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;  // Uso 'int' en lugar de Long
 
-    // Getters y setters
-    public Long getId() {
+    private String nombre;
+    private int cantidad;
+
+    // idTipoProduct también debe ser int, si la base de datos usa 'int'
+    private int idTipoProduct;  // Asegúrate de que esto sea 'int'
+
+    // Constructor vacío (por JPA)
+    public Producto() {}
+
+    // Constructor con parámetros
+    public Producto(String nombre, int cantidad, int idTipoProduct) {
+        this.nombre = nombre;
+        this.cantidad = cantidad;
+        this.idTipoProduct = idTipoProduct;
+    }
+
+    // Getters y Setters
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public Long getNombre() {
+    public String getNombre() {
         return nombre;
     }
 
-    public Long getCantidad() {
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getCantidad() {
         return cantidad;
     }
-    
-    public Long getCantidadMin() {
-        return cantidadMin;
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
     }
 
-    public Long getCantidadMax() {
-        return cantidadMax;
-    }
-
-    public Long getIdTipoProducto() {
+    public int getIdTipoProduct() {
         return idTipoProduct;
+    }
+
+    public void setIdTipoProduct(int idTipoProduct) {
+        this.idTipoProduct = idTipoProduct;
     }
 }

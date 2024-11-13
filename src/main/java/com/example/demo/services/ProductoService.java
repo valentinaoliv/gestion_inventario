@@ -15,6 +15,7 @@ public class ProductoService {
     private ProductoRepository productoRepository;
 
     public List<Producto> obtenerTodosLosProductos() {
+        System.out.println("Obteniendo todos los productos...");
         return productoRepository.findAll();  // Recupera todos los productos
     }
 
