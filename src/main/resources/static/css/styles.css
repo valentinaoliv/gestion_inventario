@@ -1,0 +1,208 @@
+/* Estilos para la barra lateral */
+#sidebar {
+    height: 100vh;
+    padding-top: 1rem;
+    border-right: 1px solid #4b0c36;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    background-color: #4b0c36; /* Fondo azul claro */
+    z-index: 1000;
+}
+
+#sidebar .nav-link {
+    color: #1565c0; /* Azul oscuro para los enlaces */
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+}
+
+#sidebar .nav-link:hover {
+    color: #4b0c36; /* Rojo para el hover */
+}
+
+#sidebar .nav-link.active {
+    color: #4b0c36; /* Azul más intenso para el enlace activo */
+    font-weight: bold;
+}
+
+/* Ajustes de contenido */
+main {
+    margin-left: 250px;
+    padding-top: 20px;
+}
+
+/* Estilos para el navbar */
+.navbar {
+    background-color: #4b0c36; /* Azul oscuro para el fondo del navbar */
+    padding: 1rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .nav-link {
+    color: #4b0c36;
+    margin-right: 1rem;
+}
+
+.navbar .nav-link:hover {
+    color: #4b0c36; /* Rojo para el hover en el navbar */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color:#4b0c36; /* Azul oscuro para el fondo del footer */
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color:#4b0c36; /* Rojo para los enlaces en el footer al pasar el ratón */
+}
+
+/* Ajustes de estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+/* Personalización del campo de contraseña */
+input[type="password"] {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.5rem;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+/* Estilos para la lista de navegación vertical */
+.sidebar-nav {
+    background-color: #89d0e1; /* Azul claro */
+    padding: 1rem; /* Espacio interno alrededor de la lista */
+    border-radius: 8px; /* Bordes redondeados opcionales */
+    width: 100%; /* Ajusta el ancho según necesites */
+}
+
+.sidebar-nav .nav-link {
+    color: #1565c0; /* Color azul oscuro para el texto de los enlaces */
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-family: 'Poppins', sans-serif; /* Fuente redondeada */
+}
+
+.sidebar-nav .nav-link:hover {
+    color: #d32f2f; /* Color rojo para el hover */
+}
+
+.sidebar-nav .nav-link.active {
+    color: #0d47a1; /* Azul más intenso para el enlace activo */
+    font-weight: bold;
+}
+
+/* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Encabezado */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            color: #4b0c36;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #777;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+    /* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #4b0c36;
+    color: white;
+    font-weight: bold;
+}
+
+table td {
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Botón */
+.btn-custom {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4b0c36;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #333;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
