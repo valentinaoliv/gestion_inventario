@@ -47,6 +47,5 @@ public class HomeController {
         return "productos";
     }
 
-
 }
 
