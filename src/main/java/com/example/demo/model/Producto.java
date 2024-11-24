@@ -1,64 +1,39 @@
 package com.example.demo.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-
+import jakarta.persistence.Table;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 @Entity
+@ToString @EqualsAndHashCode
+@Table(name = "productos")
 public class Producto {
 
+    @Getter @Setter @Column(name = "ID")
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;  // Uso 'int' en lugar de Long
+    private int id;  
 
+    @Getter @Setter @Column(name = "nombre")
     private String nombre;
+
+    @Getter @Setter @Column(name = "CANTIDAD")
     private int cantidad;
 
-    // idTipoProduct también debe ser int, si la base de datos usa 'int'
-    private int idTipoProduct;  // Asegúrate de que esto sea 'int'
+    @Getter @Setter @Column(name = "CANTIDAD_MINIMA")
+    private int cantidadMin;
 
-    // Constructor vacío (por JPA)
-    public Producto() {}
+    @Getter @Setter @Column(name = "CANTIDAD_MAXIMA")
+    private int cantidadMax;
 
-    // Constructor con parámetros
-    public Producto(String nombre, int cantidad, int idTipoProduct) {
-        this.nombre = nombre;
-        this.cantidad = cantidad;
-        this.idTipoProduct = idTipoProduct;
-    }
 
-    // Getters y Setters
-    public int getId() {
-        return id;
-    }
+    @Getter @Setter @Column(name = "TIPO_PRODUCTO_ID")
+    private int idTipoProduct;  
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public int getCantidad() {
-        return cantidad;
-    }
-
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
-    }
-
-    public int getIdTipoProduct() {
-        return idTipoProduct;
-    }
-
-    public void setIdTipoProduct(int idTipoProduct) {
-        this.idTipoProduct = idTipoProduct;
-    }
 }
+
+   
