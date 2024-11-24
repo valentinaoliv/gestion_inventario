@@ -41,11 +41,7 @@ public class HomeController {
     public String login() {
         return "home"; // Nombre de tu archivo home.html
     } 
-     
-    @GetMapping("/productos")
-    public String mostrarLosProductos() {
-        return "productos";
-    }
+    
 
 }
 
