@@ -14,12 +14,6 @@ public class HomeController {
         return "index";  // Devuelve la plantilla "index.html"
     }
 
-
-    // Ruta para la página de "Acerca de"
-    @GetMapping("/categorias")
-    public String mostrarLaCategoria() {
-        return "categorias";  // Devuelve la plantilla "categorias.html"
-    }
     
     @GetMapping("/provedores")
     public String mostrarElProvedor() {

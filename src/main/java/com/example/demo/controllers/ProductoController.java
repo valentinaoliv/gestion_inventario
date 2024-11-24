@@ -7,8 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.example.demo.dao.productosDao;
 import com.example.demo.model.Producto;
+import com.example.demo.services.productosDao;
 
 @Controller
 public class ProductoController {
