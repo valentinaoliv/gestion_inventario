@@ -1,0 +1,124 @@
+/* Estilos para la barra lateral */
+#sidebar {
+    height: 100vh;
+    padding-top: 1rem;
+    border-right: 1px solid #4b0c36;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    background-color: #4b0c36;
+    z-index: 1000;
+}
+
+#sidebar .nav-link {
+    color: #1565c0;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+}
+
+#sidebar .nav-link:hover {
+    color: #4b0c36;
+}
+
+#sidebar .nav-link.active {
+    color: #4b0c36;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+main {
+    margin-left: 250px; /* Asegura espacio para el sidebar */
+    padding: 20px;
+    flex: 1; /* Permite que el contenido crezca en un contenedor flex */
+}
+
+/* Estilos para el navbar */
+.navbar {
+    background-color: #0d47a1;
+    padding: 1rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .nav-link {
+    color: white;
+    margin-right: 1rem;
+}
+
+.navbar .nav-link:hover {
+    color: #1565c0;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #4b0c36;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Ajustes generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #4b0c36;
+    color: white;
+    font-weight: bold;
+}
+
+table td {
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Botón personalizado */
+.btn-custom {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4b0c36;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
